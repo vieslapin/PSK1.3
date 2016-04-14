@@ -37,7 +37,7 @@ import javax.validation.constraints.Size;
     @NamedQuery(name = "Car.findByRegistrationNo", query = "SELECT c FROM Car c WHERE c.registrationNo = :registrationNo"),
     @NamedQuery(name = "Car.findByOptLockVersion", query = "SELECT c FROM Car c WHERE c.optLockVersion = :optLockVersion")})
 public class Car implements Serializable {
-
+    
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -63,7 +63,7 @@ public class Car implements Serializable {
     @JoinColumn(name = "DRIVER_ID", referencedColumnName = "ID")
     @ManyToOne
     private Driver driverId;
-
+    //psk
     public Car() {
     }
 
